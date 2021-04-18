@@ -2,7 +2,7 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%:latest
 
 # Here we install we install openssh-server with built-in script that makes all the update, install and cleaning for us
-RUN install_packages openssh-server
+RUN install_packages ddclient
 
 COPY start.sh /usr/src/
 
