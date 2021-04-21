@@ -1,0 +1,19 @@
+# This first line selects our base image from Balena repository
+FROM balenalib/%%BALENA_MACHINE_NAME%%:latest
+
+# Here we install we install ddclient for DNS updates.
+RUN apt-get update && apt-get install -y ddclient
+
+# RUN apt-get update \
+#     && apt-get install -y ddclient libio-socket-ssl-perl \
+#     && apt-get clean \
+#     && rm -rf /var/lib/apt/lists/*
+
+# Find your ddclient.conf
+# RUN find / -xdev -type f -name ddclient.conf 2>/dev/null
+
+COPY start.sh /usr/src/
+
+RUN chmod +x /usr/src/start.sh
+
+CMD [ "/bin/bash", "/usr/src/start.sh" ]

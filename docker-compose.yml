@@ -47,15 +47,16 @@ services:
     ports:
       - "25575:25575/udp"
       - "25575:25575/tcp"
-  dynu-dns:
+  ddclient:
       network_mode: host
-      restart: always
-      build: ./dynu-dns
+      restart: on-failure
+      build: ./ddclient
       privileged: false
       labels:
         io.balena.features.dbus: 1
       volumes:
-        - serverfiles:/serverfiles      
+        - serverfiles:/serverfiles
+        - servercache:/servercache
 volumes:
   serverfiles:
   servercache:
