@@ -8,4 +8,4 @@ if [[ ! -e "/serverfiles/ddclient.conf" ]]; then
 fi
 
 # exec /usr/sbin/ddclient -daemon 300 -syslog -file /serverfiles/ddclient.conf
-exec /usr/sbin/ddclient -daemon=300 -foreground -syslog -verbose -noquiet -file /serverfiles/ddclient.conf -cache /servercache
+exec /usr/sbin/ddclient -daemon=300 -foreground -syslog -verbose -noquiet -file /serverfiles/ddclient.conf -cache /servercache/ddclient.cache
