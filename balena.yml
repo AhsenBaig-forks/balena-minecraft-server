@@ -13,29 +13,16 @@ assets:
   repository:
     type: blob.asset
     data:
-<<<<<<< HEAD
       url: 'https://github.com/AhsenBaig-forks/balena-minecraft-server'
-=======
-      url: 'https://github.com/AlexProgrammerDE/balena-minecraft-server'
->>>>>>> a393b8f1e20a6c35f56d0d5077b6efaa351e5d66
   logo:
     type: blob.asset
     data:
-<<<<<<< HEAD
-      url: 'https://raw.githubusercontent.com/AhsenBaig-forks/balena-minecraft-server/master/logo.png'
-=======
       url: >-
-        https://raw.githubusercontent.com/AlexProgrammerDE/balena-minecraft-server/master/logo.png
->>>>>>> a393b8f1e20a6c35f56d0d5077b6efaa351e5d66
+        https://raw.githubusercontent.com/AhsenBaig-forks/balena-minecraft-server/master/logo.png
 data:
   applicationEnvironmentVariables:
     - RAM: 1G
   defaultDeviceType: raspberrypi4-64
   supportedDeviceTypes:
-<<<<<<< HEAD
-    - "raspberrypi4-64"
-    - "jetson-nano"
-=======
     - raspberrypi4-64
     - jetson-nano
->>>>>>> a393b8f1e20a6c35f56d0d5077b6efaa351e5d66
