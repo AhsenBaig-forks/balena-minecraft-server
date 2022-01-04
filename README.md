@@ -3,7 +3,7 @@
 # Minecraft Server
 **Starter project enabling you a Minecraft Server using just a Raspberry Pi 4 or Jetson Nano.**
 
-This project has been tested on a Raspberry Pi 4 B 4GB & Nvidia Jetson Nano. I do not recommend using a Raspberry Pi 3 or older. They have not enough RAM and power to calculate all the things. :boom:
+This project has been tested on a Raspberry Pi 4 B 4GB & Nvidia Jetson Nano. I do not recommend using a Raspberry Pi 3 or older. They do not have enough RAM and power to calculate all the things. :boom:
 
 ## Why balenaMinecraftServer?
 
@@ -130,6 +130,8 @@ If you want to customize your server even further, but don't know where to start
 * ccSpigot (Vanilla Java Edition, Fork and continuation of Paper 1.12.2): https://github.com/moom0o/ccSpigot
 
 Note: Balena Minecraft Server uses Paper. It is an efficient and powerful server. It is compatible with spigot and bukkit plugins.
+
+If you want to use a different Minecraft Sever .jar, add a variable called `JAR_FILE`. The value should be the same as your custom .jar file that you placed in the serverfiles directory using SCP.
 
 I encourage you to take your server build even further! There are many tutorials out there on server customization-- this article only touches on a few ideas. If you need help, please reach out by submitting an [issue on GitHub](https://github.com/AlexProgrammerDE/balena-minecraft-server/issues).
 
